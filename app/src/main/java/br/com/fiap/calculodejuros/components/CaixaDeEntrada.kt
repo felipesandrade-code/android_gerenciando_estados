@@ -18,11 +18,12 @@ fun CaixaDeEntrada(
     placeholder: String,
     label: String,
     modifier: Modifier,
-    keyboardType: KeyboardType
+    keyboardType: KeyboardType,
+    atualizarValor: (String) -> Unit
 ) {
     OutlinedTextField(
         value = value,
-        onValueChange = {},
+        onValueChange = atualizarValor,
         modifier = modifier
             .fillMaxWidth()
             .padding(top = 16.dp),
