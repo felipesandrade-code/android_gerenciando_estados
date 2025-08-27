@@ -8,6 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import br.com.fiap.calculodejuros.juros.JurosScreen
+import br.com.fiap.calculodejuros.juros.JurosScreenViewModel
 import br.com.fiap.calculodejuros.ui.theme.CalculoDeJurosTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    JurosScreen()
+                    JurosScreen(JurosScreenViewModel())
                 }
             }
         }
